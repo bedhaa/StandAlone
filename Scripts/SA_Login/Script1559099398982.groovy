@@ -13,7 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\Sehati - Bedha\\Downloads\\app-universal-debug (StandAlone).apk', true)
+//Mobile.startApplication('C:\\Users\\Sehati - Rudi\\Downloads\\app-universal-debug.apk', true)
+
+Mobile.startApplication(GlobalVariable.apk, true)
 
 Mobile.setText(findTestObject('StandAlone/1. Login/android.widget.EditText0 - User ID Anda'), 'doctorqa@mailinator.com', 
     0)
