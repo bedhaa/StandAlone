@@ -15,15 +15,14 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\Sehati - Bedha\\Downloads\\app-universal-debug (StandAlone).apk', true)
 
-Mobile.setText(findTestObject('StandAlone/1. Login/android.widget.EditText0 - User ID Anda'), 'doctorqa@qa.com', 0)
+Mobile.setText(findTestObject('StandAlone/1. Login/android.widget.EditText0 - User ID Anda'), 'doctorqa@qaqaqa.com', 0)
 
-Mobile.setText(findTestObject('StandAlone/1. Login/android.widget.EditText1 - Kata Sandi Anda'), 'qwerty', 0)
+Mobile.setText(findTestObject('StandAlone/1. Login/android.widget.EditText1 - Kata Sandi Anda'), 'qwertyqwerty', 0)
 
 Mobile.tap(findTestObject('StandAlone/1. Login/android.widget.Button0 - Masuk'), 0)
 
 //Mobile.verifyElementChecked("Username atau email tidak ditemukan", 0)
-
-Mobile.verifyCheckpoint("Username atau email tidak ditemukan", true)
+Mobile.verifyCheckpoint('Username atau email tidak ditemukan', true)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
