@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication(GlobalVariable.apk, true)
 
-Mobile.setText(findTestObject('StandAlone/1. Login/android.widget.EditText0 - User ID Anda'), 'doctorqa2@mailinator.com', 
+Mobile.setText(findTestObject('StandAlone/1. Login/android.widget.EditText0 - User ID Anda'), 'doctorqa23@mailinator.com', 
     0)
 
 Mobile.setText(findTestObject('StandAlone/1. Login/android.widget.EditText1 - Kata Sandi Anda'), 'qwerty', 0)
