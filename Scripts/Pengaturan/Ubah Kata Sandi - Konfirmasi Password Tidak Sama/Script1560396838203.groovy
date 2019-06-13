@@ -15,31 +15,31 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\Sehati-Adel\\Downloads\\CTG-SA.apk', true)
 
-Mobile.setText(findTestObject('Ubah Kata Sandi/android.widget.EditText0 - User ID Anda'), 'lilies.pbnd', 0)
+Mobile.setText(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.EditText0 - User ID Anda'), 'lilies.pbnd', 0)
 
-Mobile.setText(findTestObject('Ubah Kata Sandi/android.widget.EditText1 - Kata Sandi Anda'), 'qwerty123456', 0)
+Mobile.setText(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.EditText1 - Kata Sandi Anda'), 'qwerty123456', 0)
 
-Mobile.tap(findTestObject('Ubah Kata Sandi/android.widget.Button0 - Masuk'), 0)
+Mobile.tap(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.Button0 - Masuk'), 0)
 
-Mobile.tap(findTestObject('Ubah Kata Sandi/android.widget.ImageView0'), 0)
+Mobile.tap(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.ImageView0'), 0)
 
-Mobile.tap(findTestObject('Ubah Kata Sandi/android.widget.FrameLayout3'), 0)
+Mobile.tap(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.FrameLayout3'), 0)
 
-Mobile.tap(findTestObject('Ubah Kata Sandi/android.widget.EditText0 - Kata sandi baru'), 0)
+Mobile.tap(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.EditText0 - Kata sandi baru'), 0)
 
-Mobile.setText(findTestObject('Ubah Kata Sandi/android.widget.EditText0 - Kata sandi baru (1)'), 'qwerty123456', 0)
+Mobile.setText(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.EditText0 - Kata sandi baru (1)'), 'qwerty123456', 0)
 
-Mobile.tap(findTestObject('Ubah Kata Sandi/android.widget.ImageButton0'), 0)
+Mobile.tap(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.ImageButton0'), 0)
 
-Mobile.setText(findTestObject('Ubah Kata Sandi/android.widget.EditText1 - Konfirmasi kata sandi baru'), 'qwerty123', 0)
+Mobile.setText(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.EditText1 - Konfirmasi kata sandi baru'), 'qwerty123', 0)
 
-Mobile.tap(findTestObject('Ubah Kata Sandi/android.widget.ImageButton1'), 0)
+Mobile.tap(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.ImageButton1'), 0)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Ubah Kata Sandi/android.widget.Button0 - Ubah Kata Sandi Saya'), 0)
+Mobile.tap(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.Button0 - Ubah Kata Sandi Saya'), 0)
 
-Mobile.tap(findTestObject('Ubah Kata Sandi/android.widget.TextView0 - Kembali'), 0)
+Mobile.tap(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.TextView0 - Kembali'), 0)
 
-Mobile.tap(findTestObject('Ubah Kata Sandi/android.widget.Button0 - Keluar'), 0)
+Mobile.tap(findTestObject('StandAlone/2. Ubah Kata Sandi/android.widget.Button0 - Keluar'), 0)
 
