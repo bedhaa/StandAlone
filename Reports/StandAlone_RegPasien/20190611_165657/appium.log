@@ -1,0 +1,925 @@
+[35m[Appium][39m Welcome to Appium v1.8.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 62053
+[35m[Appium][39m   chromeDriverPort: 62054
+[35m[Appium][39m   tmpDir: C:\Users\SEHATI~1\AppData\Local\Temp\\Katalon\Appium\Temp1560247019625
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:62053
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[MJSONWP][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":null}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m34 ms - 83[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"capabilities":{"desiredCapabilities":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"firstMatch":[{"platformName":"android"}]}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},null,{"desiredCapabilities":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"firstMatch":[{"platformName":"android"}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1560247023405 (16:57:03 GMT+0700 (Western Indonesia Time))
+[35m[Appium][39m Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
+[35m[Appium][39m The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["app","autoGrantPermissions","automationName","deviceId","deviceName","fullReset","newCommandTimeout","noReset","platform","platformName","udid"]. Falling back to JSONWP protocol.
+[35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.12.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   app: C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk
+[35m[Appium][39m   autoGrantPermissions: true
+[35m[Appium][39m   automationName: uiautomator2
+[35m[Appium][39m   deviceId: 
+[35m[Appium][39m   deviceName: emulator-5554 (Android SDK built for x86 - Android 7.1.1)
+[35m[Appium][39m   fullReset: false
+[35m[Appium][39m   newCommandTimeout: 1800
+[35m[Appium][39m   noReset: true
+[35m[Appium][39m   platform: ANDROID
+[35m[Appium][39m   platformName: Android
+[35m[Appium][39m   udid: emulator-5554
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"app":"C:\\Users\\Sehati -...
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: deviceId, platform.
+[35m[BaseDriver][39m Session created with session id: 22b2fc34-a18f-4935-9069-7c808af5e07f
+[35m[BaseDriver][39m Using local app 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk'
+[debug] [35m[UiAutomator2][39m Checking whether app is actually present
+[debug] [35m[AndroidDriver][39m Getting Java version
+[35m[AndroidDriver][39m Java version is: 1.8.0_181
+[35m[ADB][39m Checking whether adb is present
+[35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk' (newest first):
+[35m[ADB][39m     C:/Users/Sehati - Bedha/.katalon/tools/android_sdk/build-tools/28.0.3
+[35m[ADB][39m Using adb.exe from C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 2 device(s) connected
+[35m[AndroidDriver][39m Using device: emulator-5554
+[debug] [35m[ADB][39m Setting device id to emulator-5554
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 25
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[AndroidDriver][39m Parsing package and activity from app manifest
+[35m[ADB][39m Using the alternative activity name detection method because of: Could not find apkanalyzer.bat in C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\apkanalyzer.bat,C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\emulator\apkanalyzer.bat,C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\tools\apkanalyzer.bat,C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\tools\bin\apkanalyzer.bat,C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apkanalyzer.bat. Do you have the Android SDK installed at 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk'?
+[35m[ADB][39m Checking whether aapt is present
+[35m[ADB][39m Using aapt.exe from C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\aapt.exe
+[35m[ADB][39m Extracting package and launch activity from manifest
+[35m[ADB][39m Package name: 'co.sehati.telectg.android'
+[35m[ADB][39m Main activity name: 'co.sehati.telectg.android.TeleCTGActivity'
+[debug] [35m[AndroidDriver][39m Parsed package and activity are: co.sehati.telectg.android/co.sehati.telectg.android.TeleCTGActivity
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 7.1.1
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell wm size'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell wm density'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': Android SDK built for x86
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': Google
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk
+[35m[ADB][39m Using apksigner.bat from C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'verify,--print-certs,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk'
+[debug] [35m[ADB][39m 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' is not signed with debug cert.
+[debug] [35m[ADB][39m Zip-aligning 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk'
+[35m[ADB][39m Checking whether zipalign is present
+[35m[ADB][39m Using zipalign.exe from C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\zipalign.exe
+[debug] [35m[ADB][39m Signing 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' with default cert
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'sign,--key,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.pk8,--cert,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.x509.pem,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk'
+[35m[ADB][39m Cannot use apksigner tool for signing. Defaulting to sign.jar. Original error: Command ''C:\\Users\\Sehati - Bedha\\.katalon\\tools\\android_sdk\\build-tools\\28.0.3\\apksigner.bat' sign --key 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8' --cert 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem' 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.12.0.apk'' exited with code 1; StdErr: 'C:\Users\Sehati' is not recognized as an internal or external command,
+[35m[ADB][39m operable program or batch file.
+[35m[ADB][39m 
+[debug] [35m[ADB][39m Resigning apk.
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'verify,--print-certs,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[debug] [35m[ADB][39m 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is not signed with debug cert.
+[debug] [35m[ADB][39m Zip-aligning 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[debug] [35m[ADB][39m Signing 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' with default cert
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'sign,--key,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.pk8,--cert,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.x509.pem,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[ADB][39m Cannot use apksigner tool for signing. Defaulting to sign.jar. Original error: Command ''C:\\Users\\Sehati - Bedha\\.katalon\\tools\\android_sdk\\build-tools\\28.0.3\\apksigner.bat' sign --key 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8' --cert 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem' 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk'' exited with code 1; StdErr: 'C:\Users\Sehati' is not recognized as an internal or external command,
+[35m[ADB][39m operable program or batch file.
+[35m[ADB][39m 
+[debug] [35m[ADB][39m Resigning apk.
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 uninstall io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server was successfully uninstalled
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 uninstall io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server.test' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server.test was successfully uninstalled
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m App is not installed
+[debug] [35m[ADB][39m App 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' not installed. Installing
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 install 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.12.0.apk''
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m App is not installed
+[debug] [35m[ADB][39m App 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' not installed. Installing
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 install 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk''
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[UiAutomator2][39m Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list instrumentation'
+[debug] [35m[UiAutomator2][39m Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 wait-for-device'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.settings'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell ps'
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell appops set io.appium.settings android\:mock_location allow'
+[35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.
+[35m[AndroidDriver][39m Got language: 'null' and country: 'null'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.unlock
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.unlock'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.unlock'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.unlock'
+[debug] [35m[ADB][39m The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+[debug] [35m[UiAutomator2][39m Forwarding UiAutomator2 Server port 6790 to 8200
+[debug] [35m[ADB][39m Forwarding system: 8200 to device: 6790
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward tcp\:8200 tcp\:6790'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell rm -rf /data/local/tmp/strings.json'
+[debug] [35m[AndroidDriver][39m Extracting strings from apk
+[debug] [35m[AndroidDriver][39m C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk
+[debug] [35m[AndroidDriver][39m null
+[debug] [35m[AndroidDriver][39m C:\Users\SEHATI~1\AppData\Local\Temp\Katalon\Appium\Temp1560247019625\co.sehati.telectg.android
+[debug] [35m[ADB][39m Extracting strings for language: default
+[35m[ADB][39m Successfully extracted 293 strings from 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk' resources for '(default)' configuration
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 push C\:\\Users\\SEHATI~1\\AppData\\Local\\Temp\\Katalon\\Appium\\Temp1560247019625\\co.sehati.telectg.android\\strings.json /data/local/tmp'
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'verify,--print-certs,C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk'
+[debug] [35m[ADB][39m 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk' is not signed with debug cert.
+[debug] [35m[ADB][39m Zip-aligning 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk'
+[debug] [35m[ADB][39m Signing 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk' with default cert
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'sign,--key,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.pk8,--cert,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.x509.pem,C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk'
+[35m[ADB][39m Cannot use apksigner tool for signing. Defaulting to sign.jar. Original error: Command ''C:\\Users\\Sehati - Bedha\\.katalon\\tools\\android_sdk\\build-tools\\28.0.3\\apksigner.bat' sign --key 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8' --cert 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem' 'C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk'' exited with code 1; StdErr: 'C:\Users\Sehati' is not recognized as an internal or external command,
+[35m[ADB][39m operable program or batch file.
+[35m[ADB][39m 
+[debug] [35m[ADB][39m Resigning apk.
+[debug] [35m[ADB][39m Getting install status for co.sehati.telectg.android
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages co.sehati.telectg.android'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'co.sehati.telectg.android'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package co.sehati.telectg.android'
+[debug] [35m[ADB][39m The installed 'co.sehati.telectg.android' package does not require upgrade ('1.0.0' >= '1.0.0')
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+[35m[UiAutomator2][39m Starting uiautomator2 server 1.12.0
+[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' and test from 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Running command: 'adb -s emulator-5554 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+[35m[UiAutomator2][39m Waiting up to 20000ms for UiAutomator2 to be online...
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /session] to [POST http://localhost:8200/wd/hub/session] with body: {"desiredCapabilities":{"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceA...
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb","status":0,"value":"Created Session"}
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys window'
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[UiAutomator2][39m UiAutomator2 did not start the activity we were waiting for, 'co.sehati.telectg.android/co.sehati.telectg.android.TeleCTGActivity'. Starting it ourselves
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am start -W -n co.sehati.telectg.android/co.sehati.telectg.android.TeleCTGActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[ADB][39m Waiting up to 20000ms for activity matching pkg: 'co.sehati.telectg.android' and activity: 'co.sehati.telectg.android.TeleCTGActivity' to be focused
+[debug] [35m[ADB][39m Possible activities, to be checked: 'co.sehati.telectg.android.TeleCTGActivity', 'co.sehati.telectg.android.co.sehati.telectg.android.TeleCTGActivity'
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[ADB][39m Found package: 'co.sehati.telectg.android' and fully qualified activity name : 'co.sehati.telectg.android.TeleCTGActivity'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/appium/device/pixel_ratio] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":2.625}"
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /appium/device/system_bars] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/appium/device/system_bars] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{\"statusBar\":63}}"
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /window/current/size] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/window/current/size] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{\"height\":1794,\"width\":1080}}"
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 22b2fc34-a18f-4935-9069-7c808af5e07f added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1560247054673 (16:57:34 GMT+0700 (Western Indonesia Time))
+[debug] [35m[MJSONWP][39m Responding to client with driver.createSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m31270 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[W3C][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":null}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m30 ms - 55[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/timeouts[39m
+[35m[HTTP][39m [90m{"type":"implicit","ms":30000}[39m
+[debug] [35m[W3C][39m Bad parameters: BadParametersError: Parameters were incorrect. We wanted "W3C protocol expects any of script, pageLoad or implicit to be set" and you sent {"type":"implicit","ms":30000}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/timeouts [39m[33m400[39m [90m30 ms - 5492[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/window/current/size[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/window/current/size] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/window/current/size] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{\"height\":1794,\"width\":1080}}"
+[35m[JSONWP Proxy][39m Replacing sessionId 5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb with 22b2fc34-a18f-4935-9069-7c808af5e07f
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/window/current/size [39m[32m200[39m [90m34 ms - 100[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/elements[39m
+[35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").text(\"User ID Anda\").resourceId(\"co.sehati.telectg.android:id/edit_username\").instance(0)"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.EditText\").text(\"User ID Anda\").resourceId(\"co.sehati.telectg.android:id/edit_username\").instance(0)","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /elements] to [POST http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.EditText\").text(\"User ID Anda\").resourceId(\"co.sehati.telectg.android:id/edit_username\").instance(0)","context":"","multiple":true}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb","status":0,"value":[{"ELEMENT":"651965e7-307b-4ecc-a6b1-22322591445f"}]}
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElements() result: [{"ELEMENT":"651965e7-307b-4ecc-a6b1-22322591445f"}]
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/elements [39m[32m200[39m [90m80 ms - 124[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f [39m[32m200[39m [90m14 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f [39m[32m200[39m [90m9 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f [39m[32m200[39m [90m10 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f [39m[32m200[39m [90m9 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/651965e7-307b-4ecc-a6b1-22322591445f/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/651965e7-307b-4ecc-a6b1-22322591445f/location] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/element/651965e7-307b-4ecc-a6b1-22322591445f/location] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{\"x\":173,\"y\":625}}"
+[35m[JSONWP Proxy][39m Replacing sessionId 5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb with 22b2fc34-a18f-4935-9069-7c808af5e07f
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/651965e7-307b-4ecc-a6b1-22322591445f/location [39m[32m200[39m [90m24 ms - 89[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/651965e7-307b-4ecc-a6b1-22322591445f/clear[39m
+[35m[HTTP][39m [90m{"id":"651965e7-307b-4ecc-a6b1-22322591445f"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.clear() with args: ["651965e7-307b-4ecc-a6b1-22322591445f","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/651965e7-307b-4ecc-a6b1-22322591445f/clear] to [POST http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/element/651965e7-307b-4ecc-a6b1-22322591445f/clear] with body: {"elementId":"651965e7-307b-4ecc-a6b1-22322591445f"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb","status":0,"value":"Element Cleared"}
+[debug] [35m[MJSONWP][39m Responding to client with driver.clear() result: "Element Cleared"
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/651965e7-307b-4ecc-a6b1-22322591445f/clear [39m[32m200[39m [90m23 ms - 89[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/651965e7-307b-4ecc-a6b1-22322591445f/value[39m
+[35m[HTTP][39m [90m{"id":"651965e7-307b-4ecc-a6b1-22322591445f","value":["doctorqa@mailinator.com"]}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setValue() with args: [["doctorqa@mailinator.com"],"651965e7-307b-4ecc-a6b1-22322591445f","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/651965e7-307b-4ecc-a6b1-22322591445f/value] to [POST http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/element/651965e7-307b-4ecc-a6b1-22322591445f/value] with body: {"elementId":"651965e7-307b-4ecc-a6b1-22322591445f","text":"doctorqa@mailinator.com","replace":false}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb","status":0,"value":""}
+[debug] [35m[MJSONWP][39m Responding to client with driver.setValue() result: ""
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/651965e7-307b-4ecc-a6b1-22322591445f/value [39m[32m200[39m [90m1102 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/window/current/size[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/window/current/size] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/window/current/size] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{\"height\":1794,\"width\":1080}}"
+[35m[JSONWP Proxy][39m Replacing sessionId 5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb with 22b2fc34-a18f-4935-9069-7c808af5e07f
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/window/current/size [39m[32m200[39m [90m12 ms - 100[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/elements[39m
+[35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").resourceId(\"co.sehati.telectg.android:id/edit_password\").instance(1)"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.EditText\").resourceId(\"co.sehati.telectg.android:id/edit_password\").instance(1)","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /elements] to [POST http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.EditText\").resourceId(\"co.sehati.telectg.android:id/edit_password\").instance(1)","context":"","multiple":true}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb","status":0,"value":[{"ELEMENT":"157d8b2a-a3a8-4842-b273-b12bafb9d644"}]}
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElements() result: [{"ELEMENT":"157d8b2a-a3a8-4842-b273-b12bafb9d644"}]
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/elements [39m[32m200[39m [90m474 ms - 124[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f [39m[32m200[39m [90m10 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f [39m[32m200[39m [90m10 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f [39m[32m200[39m [90m8 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f [39m[32m200[39m [90m8 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/location] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/location] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":{\"x\":173,\"y\":772}}"
+[35m[JSONWP Proxy][39m Replacing sessionId 5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb with 22b2fc34-a18f-4935-9069-7c808af5e07f
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/location [39m[32m200[39m [90m14 ms - 89[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/clear[39m
+[35m[HTTP][39m [90m{"id":"157d8b2a-a3a8-4842-b273-b12bafb9d644"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.clear() with args: ["157d8b2a-a3a8-4842-b273-b12bafb9d644","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/157d8b2a-a3a8-4842-b273-b12bafb9d644/clear] to [POST http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/clear] with body: {"elementId":"157d8b2a-a3a8-4842-b273-b12bafb9d644"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb","status":0,"value":"Element Cleared"}
+[debug] [35m[MJSONWP][39m Responding to client with driver.clear() result: "Element Cleared"
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/clear [39m[32m200[39m [90m20 ms - 89[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/value[39m
+[35m[HTTP][39m [90m{"id":"157d8b2a-a3a8-4842-b273-b12bafb9d644","value":["qwerty"]}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setValue() with args: [["qwerty"],"157d8b2a-a3a8-4842-b273-b12bafb9d644","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/157d8b2a-a3a8-4842-b273-b12bafb9d644/value] to [POST http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/value] with body: {"elementId":"157d8b2a-a3a8-4842-b273-b12bafb9d644","text":"qwerty","replace":false}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb","status":0,"value":""}
+[debug] [35m[MJSONWP][39m Responding to client with driver.setValue() result: ""
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/element/157d8b2a-a3a8-4842-b273-b12bafb9d644/value [39m[32m200[39m [90m1064 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentContext() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context [39m[32m200[39m [90m3 ms - 84[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/contexts[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getContexts() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.getContexts() result: ["NATIVE_APP"]
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/contexts [39m[32m200[39m [90m155 ms - 86[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context[39m
+[35m[HTTP][39m [90m{"name":"NATIVE_APP"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setContext() with args: ["NATIVE_APP","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.setContext() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context [39m[32m200[39m [90m40 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/appium/device/hide_keyboard[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.hideKeyboard() with args: [null,null,null,null,"22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys input_method'
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/appium/device/hide_keyboard [39m[31m500[39m [90m68 ms - 218[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context[39m
+[35m[HTTP][39m [90m{"name":"NATIVE_APP"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setContext() with args: ["NATIVE_APP","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.setContext() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context [39m[32m200[39m [90m46 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentContext() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context [39m[32m200[39m [90m1 ms - 84[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/contexts[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getContexts() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.getContexts() result: ["NATIVE_APP"]
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/contexts [39m[32m200[39m [90m30 ms - 86[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context[39m
+[35m[HTTP][39m [90m{"name":"NATIVE_APP"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setContext() with args: ["NATIVE_APP","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.setContext() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context [39m[32m200[39m [90m41 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getScreenshot() with args: ["22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /screenshot] to [GET http://localhost:8200/wd/hub/session/5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb/screenshot] with no body
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"5a6e45ac-b45e-4ca1-96ef-4a9af7c48ffb\",\"status\":0,\"value\":\"iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAIAAACkA3BdAAAAA3NCSVQICAjb4U\\/gAAAgAElEQVR4\\nnOzdeXxT553v8SPZsuRVskEyYOMFiAlgwGYxCashBRJSgkmTJpmGxHS7TZeJSXvnzp3ONKTT6XS2\\n1plJt0nuYBrShpI2BtIkQAtmSQIOwYIYEpvFC7ZBXrDkVbJs6f6hII6PbPnIluxj+Lxf\\/eNIPjrn\\nsUnhfP08v9+jEr77PQEAAAAAlEQ91gMAAAAAACmCCgAAAADFIagAAAAAUByCCgAAAADFIagAAAAA\\nUByCCgAAAADFIagAAAAAUByCCgAAAADFIagAAAAAUJzwsR7AuKdSqSTvuN3uMRkJAAAAcNsgqAyH\\nWqVKS0j4+j1L1syYMdNo1Gk04Wq1ShDcgtDrctmdzsqm5sOXLr186tSVlhYXuQUAAAAIkEr47vdG\\n4TaJsbF3m4wxEVqf6Yfg6HW5LO0dn1gs9t7ekNzgJkNk5LeXLXtu1cr4yEg551u7uwuPH\\/+vE+\\/d\\n6OoK6cAAAAAClZYQLwhC9Y3WsR7I8GnCwpx9fcG95j9v2LB4arKfE35\\/9twb587xdBdqozGjsmhq\\n8g\\/Xr89OSorSaHwXSgVFr8vV0tm548PTLx4\\/3tnTE4pbhKvVP33ooWeW3huuDqCwxxAZuX3dur\\/\\/\\n3OdePnnqr4uLe12uUIwNAADAj7SE+PmTp2QlTcmdPt0QGZk1ZcqAp5kbGqzd3SWXL5vrG85ea1B+\\ngMmaMuWq1doS7MCweGryfXfd5eeEC5bGP33ySXBvCl8hDyp6ne4nGzasnjFDHaLJlJviIyP\\/7r41\\ntdbWXR+dCfrF50xKPPmd78RotcP7eLha\\/czSe59atHD5Sz83...
+[debug] [35m[MJSONWP][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAIAAACkA3BdAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\nnOzdeXxT553v8SPZsuRVskEyYOMFiAlgwGYxCashBRJSgkmTJpmGxHS7TZeJSXvnzp3ONKTT6XS2\n1plJt0nuYBrShpI2BtIkQAtmSQIOwYIYEpvFC7ZBXrDkVbJs6f6hII6PbPnIluxj+Lxf/eNIPjrn\nsUnhfP08v9+jEr77PQEAAAAAlEQ91gMAAAAAACmCCgAAAADFIagAAAAAUByCCgAAAADFIagAAAAA\nUByCCgAAAADFIagAAAAAUByCCgAAAADFIagAAAAAUJzwsR7AuKdSqSTvuN3uMRkJAAAAcNsgqAyH\nWqVKS0j4+j1L1syYMdNo1Gk04Wq1ShDcgtDrctmdzsqm5sOXLr186tSVlhYXuQUAAAAIkEr47vdG\n4TaJsbF3m4wxEVqf6Yfg6HW5LO0dn1gs9t7ekNzgJkNk5LeXLXtu1cr4yEg551u7uwuPH/+vE+/d\n6OoK6cAAAAAClZYQLwhC9Y3WsR7I8GnCwpx9fcG95j9v2LB4arKfE35/9twb587xdBdqozGjsmhq\n8g/Xr89OSorSaHwXSgVFr8vV0tm548PTLx4/3tnTE4pbhKvVP33ooWeW3huuDqCwxxAZuX3dur//\n3OdePnnqr4uLe12uUIwNAADAj7SE+PmTp2QlTcmdPt0QGZk1ZcqAp5kbGqzd3SWXL5vrG85ea1B+\ngMmaMuWq1doS7MCweGryfXfd5eeEC5bGP33ySXBvCl8hDyp6ne4nGzasnjFDHaLJlJviIyP/7r41\ntdbWXR+dCfrF50xKPPmd78RotcP7eLha/czSe59atHD5Sz83NzQEd2x+GCIjpyUkRGo019vb62y2\nnr6+QOtndOHhk+Ji621tQf9dBQAACLVNc+bkZWbmTp/umTkZkifA5E6f7nlZfaO15PLl4vLyvefP\nh3CUw5...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/screenshot [39m[32m200[39m [90m290 ms - 72668[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context[39m
+[35m[HTTP][39m [90m{"name":"NATIVE_APP"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setContext() with args: ["NATIVE_APP","22b2fc34-a18f-4935-9069-7c808af5e07f"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.setContext() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/22b2fc34-a18f-4935-9069-7c808af5e07f/context [39m[32m200[39m [90m46 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[W3C][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":null}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m32 ms - 55[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"capabilities":{"desiredCapabilities":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"firstMatch":[{"platformName":"android"}]}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},null,{"desiredCapabilities":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"firstMatch":[{"platformName":"android"}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1560247059149 (16:57:39 GMT+0700 (Western Indonesia Time))
+[35m[Appium][39m Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
+[35m[Appium][39m The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["app","autoGrantPermissions","automationName","deviceId","deviceName","fullReset","newCommandTimeout","noReset","platform","platformName","udid"]. Falling back to JSONWP protocol.
+[35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.12.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   app: C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk
+[35m[Appium][39m   autoGrantPermissions: true
+[35m[Appium][39m   automationName: uiautomator2
+[35m[Appium][39m   deviceId: 
+[35m[Appium][39m   deviceName: emulator-5554 (Android SDK built for x86 - Android 7.1.1)
+[35m[Appium][39m   fullReset: false
+[35m[Appium][39m   newCommandTimeout: 1800
+[35m[Appium][39m   noReset: true
+[35m[Appium][39m   platform: ANDROID
+[35m[Appium][39m   platformName: Android
+[35m[Appium][39m   udid: emulator-5554
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"app":"C:\\Users\\Sehati -...
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: deviceId, platform.
+[35m[BaseDriver][39m Session created with session id: 1e4a7807-53cf-4d59-8e36-d07278e09a15
+[35m[BaseDriver][39m Using local app 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk'
+[debug] [35m[UiAutomator2][39m Checking whether app is actually present
+[debug] [35m[AndroidDriver][39m Getting Java version
+[35m[AndroidDriver][39m Java version is: 1.8.0_181
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 2 device(s) connected
+[35m[AndroidDriver][39m Using device: emulator-5554
+[debug] [35m[ADB][39m Setting device id to emulator-5554
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 25
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[AndroidDriver][39m Parsing package and activity from app manifest
+[35m[ADB][39m Using the alternative activity name detection method because of: Could not find apkanalyzer.bat in C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\apkanalyzer.bat,C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\emulator\apkanalyzer.bat,C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\tools\apkanalyzer.bat,C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\tools\bin\apkanalyzer.bat,C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apkanalyzer.bat. Do you have the Android SDK installed at 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk'?
+[35m[ADB][39m Extracting package and launch activity from manifest
+[35m[ADB][39m Package name: 'co.sehati.telectg.android'
+[35m[ADB][39m Main activity name: 'co.sehati.telectg.android.TeleCTGActivity'
+[debug] [35m[AndroidDriver][39m Parsed package and activity are: co.sehati.telectg.android/co.sehati.telectg.android.TeleCTGActivity
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 7.1.1
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell wm size'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell wm density'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': Android SDK built for x86
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': Google
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+[debug] [35m[UiAutomator2][39m [UIAutomator2] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:INSTRUMENTATION_RESULT: shortMsg=Process crashed.
+[debug] [35m[UiAutomator2][39m [UIAutomator2] INSTRUMENTATION_CODE: 0
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'verify,--print-certs,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk'
+[debug] [35m[ADB][39m 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' is not signed with debug cert.
+[debug] [35m[ADB][39m Zip-aligning 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk'
+[debug] [35m[ADB][39m Signing 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' with default cert
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'sign,--key,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.pk8,--cert,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.x509.pem,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk'
+[35m[ADB][39m Cannot use apksigner tool for signing. Defaulting to sign.jar. Original error: Command ''C:\\Users\\Sehati - Bedha\\.katalon\\tools\\android_sdk\\build-tools\\28.0.3\\apksigner.bat' sign --key 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8' --cert 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem' 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.12.0.apk'' exited with code 1; StdErr: 'C:\Users\Sehati' is not recognized as an internal or external command,
+[35m[ADB][39m operable program or batch file.
+[35m[ADB][39m 
+[debug] [35m[ADB][39m Resigning apk.
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'verify,--print-certs,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[debug] [35m[ADB][39m 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is not signed with debug cert.
+[debug] [35m[ADB][39m Zip-aligning 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[debug] [35m[ADB][39m Signing 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' with default cert
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'sign,--key,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.pk8,--cert,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.x509.pem,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[ADB][39m Cannot use apksigner tool for signing. Defaulting to sign.jar. Original error: Command ''C:\\Users\\Sehati - Bedha\\.katalon\\tools\\android_sdk\\build-tools\\28.0.3\\apksigner.bat' sign --key 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8' --cert 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem' 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk'' exited with code 1; StdErr: 'C:\Users\Sehati' is not recognized as an internal or external command,
+[35m[ADB][39m operable program or batch file.
+[35m[ADB][39m 
+[debug] [35m[ADB][39m Resigning apk.
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 uninstall io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server was successfully uninstalled
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 uninstall io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server.test' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server.test was successfully uninstalled
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m App is not installed
+[debug] [35m[ADB][39m App 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' not installed. Installing
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 install 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.12.0.apk''
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m App is not installed
+[debug] [35m[ADB][39m App 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' not installed. Installing
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 install 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk''
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[UiAutomator2][39m Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list instrumentation'
+[debug] [35m[UiAutomator2][39m Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 wait-for-device'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.settings'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell ps'
+[debug] [35m[AndroidDriver][39m io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell appops set io.appium.settings android\:mock_location allow'
+[35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.
+[35m[AndroidDriver][39m Got language: 'null' and country: 'null'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.unlock
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages io.appium.unlock'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.unlock'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.unlock'
+[debug] [35m[ADB][39m The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+[debug] [35m[UiAutomator2][39m Forwarding UiAutomator2 Server port 6790 to 8201
+[debug] [35m[ADB][39m Forwarding system: 8201 to device: 6790
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward tcp\:8201 tcp\:6790'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell rm -rf /data/local/tmp/strings.json'
+[debug] [35m[AndroidDriver][39m Extracting strings from apk
+[debug] [35m[AndroidDriver][39m C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk
+[debug] [35m[AndroidDriver][39m null
+[debug] [35m[AndroidDriver][39m C:\Users\SEHATI~1\AppData\Local\Temp\Katalon\Appium\Temp1560247019625\co.sehati.telectg.android
+[debug] [35m[ADB][39m Extracting strings for language: default
+[35m[ADB][39m Successfully extracted 293 strings from 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk' resources for '(default)' configuration
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 push C\:\\Users\\SEHATI~1\\AppData\\Local\\Temp\\Katalon\\Appium\\Temp1560247019625\\co.sehati.telectg.android\\strings.json /data/local/tmp'
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'verify,--print-certs,C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk'
+[debug] [35m[ADB][39m 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk' is not signed with debug cert.
+[debug] [35m[ADB][39m Zip-aligning 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk'
+[debug] [35m[ADB][39m Signing 'C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk' with default cert
+[debug] [35m[ADB][39m Starting 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\build-tools\28.0.3\apksigner.bat' with args 'sign,--key,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.pk8,--cert,C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\keys\testkey.x509.pem,C:\Users\Sehati - Bedha\Downloads\CTG-SA.apk'
+[35m[ADB][39m Cannot use apksigner tool for signing. Defaulting to sign.jar. Original error: Command ''C:\\Users\\Sehati - Bedha\\.katalon\\tools\\android_sdk\\build-tools\\28.0.3\\apksigner.bat' sign --key 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8' --cert 'C:\\Users\\Sehati - Bedha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem' 'C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk'' exited with code 1; StdErr: 'C:\Users\Sehati' is not recognized as an internal or external command,
+[35m[ADB][39m operable program or batch file.
+[35m[ADB][39m 
+[debug] [35m[ADB][39m Resigning apk.
+[debug] [35m[ADB][39m Getting install status for co.sehati.telectg.android
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list packages co.sehati.telectg.android'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'co.sehati.telectg.android'
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package co.sehati.telectg.android'
+[debug] [35m[ADB][39m The installed 'co.sehati.telectg.android' package does not require upgrade ('1.0.0' >= '1.0.0')
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+[35m[UiAutomator2][39m Starting uiautomator2 server 1.12.0
+[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.12.0.apk' and test from 'C:\Users\Sehati - Bedha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Running command: 'adb -s emulator-5554 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+[35m[UiAutomator2][39m Waiting up to 20000ms for UiAutomator2 to be online...
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /session] to [POST http://localhost:8201/wd/hub/session] with body: {"desiredCapabilities":{"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceA...
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"19b1d0de-adf3-48fa-8c0b-56abb935560c","status":0,"value":"Created Session"}
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys window'
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[UiAutomator2][39m UiAutomator2 did not start the activity we were waiting for, 'co.sehati.telectg.android/co.sehati.telectg.android.TeleCTGActivity'. Starting it ourselves
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am start -W -n co.sehati.telectg.android/co.sehati.telectg.android.TeleCTGActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[ADB][39m Waiting up to 20000ms for activity matching pkg: 'co.sehati.telectg.android' and activity: 'co.sehati.telectg.android.TeleCTGActivity' to be focused
+[debug] [35m[ADB][39m Possible activities, to be checked: 'co.sehati.telectg.android.TeleCTGActivity', 'co.sehati.telectg.android.co.sehati.telectg.android.TeleCTGActivity'
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[ADB][39m Found package: 'co.sehati.telectg.android' and fully qualified activity name : 'co.sehati.telectg.android.TeleCTGActivity'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/appium/device/pixel_ratio] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":2.625}"
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /appium/device/system_bars] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/appium/device/system_bars] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{\"statusBar\":63}}"
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /window/current/size] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/window/current/size] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{\"height\":1794,\"width\":1080}}"
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 1e4a7807-53cf-4d59-8e36-d07278e09a15 added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1560247086233 (16:58:06 GMT+0700 (Western Indonesia Time))
+[debug] [35m[MJSONWP][39m Responding to client with driver.createSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m27086 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[W3C][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":null}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m35 ms - 55[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/timeouts[39m
+[35m[HTTP][39m [90m{"type":"implicit","ms":30000}[39m
+[debug] [35m[W3C][39m Bad parameters: BadParametersError: Parameters were incorrect. We wanted "W3C protocol expects any of script, pageLoad or implicit to be set" and you sent {"type":"implicit","ms":30000}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/timeouts [39m[33m400[39m [90m2 ms - 5492[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/window/current/size[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/window/current/size] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/window/current/size] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{\"height\":1794,\"width\":1080}}"
+[35m[JSONWP Proxy][39m Replacing sessionId 19b1d0de-adf3-48fa-8c0b-56abb935560c with 1e4a7807-53cf-4d59-8e36-d07278e09a15
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/window/current/size [39m[32m200[39m [90m29 ms - 100[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/elements[39m
+[35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").text(\"User ID Anda\").resourceId(\"co.sehati.telectg.android:id/edit_username\").instance(0)"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.EditText\").text(\"User ID Anda\").resourceId(\"co.sehati.telectg.android:id/edit_username\").instance(0)","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.EditText\").text(\"User ID Anda\").resourceId(\"co.sehati.telectg.android:id/edit_username\").instance(0)","context":"","multiple":true}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"19b1d0de-adf3-48fa-8c0b-56abb935560c","status":0,"value":[{"ELEMENT":"7a59d26a-b778-4104-a237-1225db0c7353"}]}
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElements() result: [{"ELEMENT":"7a59d26a-b778-4104-a237-1225db0c7353"}]
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/elements [39m[32m200[39m [90m298 ms - 124[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15 [39m[32m200[39m [90m8 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15 [39m[32m200[39m [90m8 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15 [39m[32m200[39m [90m8 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15 [39m[32m200[39m [90m8 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/7a59d26a-b778-4104-a237-1225db0c7353/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/7a59d26a-b778-4104-a237-1225db0c7353/location] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/element/7a59d26a-b778-4104-a237-1225db0c7353/location] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{\"x\":173,\"y\":625}}"
+[35m[JSONWP Proxy][39m Replacing sessionId 19b1d0de-adf3-48fa-8c0b-56abb935560c with 1e4a7807-53cf-4d59-8e36-d07278e09a15
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/7a59d26a-b778-4104-a237-1225db0c7353/location [39m[32m200[39m [90m15 ms - 89[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/7a59d26a-b778-4104-a237-1225db0c7353/clear[39m
+[35m[HTTP][39m [90m{"id":"7a59d26a-b778-4104-a237-1225db0c7353"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.clear() with args: ["7a59d26a-b778-4104-a237-1225db0c7353","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/7a59d26a-b778-4104-a237-1225db0c7353/clear] to [POST http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/element/7a59d26a-b778-4104-a237-1225db0c7353/clear] with body: {"elementId":"7a59d26a-b778-4104-a237-1225db0c7353"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"19b1d0de-adf3-48fa-8c0b-56abb935560c","status":0,"value":"Element Cleared"}
+[debug] [35m[MJSONWP][39m Responding to client with driver.clear() result: "Element Cleared"
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/7a59d26a-b778-4104-a237-1225db0c7353/clear [39m[32m200[39m [90m21 ms - 89[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/7a59d26a-b778-4104-a237-1225db0c7353/value[39m
+[35m[HTTP][39m [90m{"id":"7a59d26a-b778-4104-a237-1225db0c7353","value":["doctorqa@mailinator.com"]}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setValue() with args: [["doctorqa@mailinator.com"],"7a59d26a-b778-4104-a237-1225db0c7353","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/7a59d26a-b778-4104-a237-1225db0c7353/value] to [POST http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/element/7a59d26a-b778-4104-a237-1225db0c7353/value] with body: {"elementId":"7a59d26a-b778-4104-a237-1225db0c7353","text":"doctorqa@mailinator.com","replace":false}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"19b1d0de-adf3-48fa-8c0b-56abb935560c","status":0,"value":""}
+[debug] [35m[MJSONWP][39m Responding to client with driver.setValue() result: ""
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/7a59d26a-b778-4104-a237-1225db0c7353/value [39m[32m200[39m [90m1085 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/window/current/size[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/window/current/size] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/window/current/size] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{\"height\":1794,\"width\":1080}}"
+[35m[JSONWP Proxy][39m Replacing sessionId 19b1d0de-adf3-48fa-8c0b-56abb935560c with 1e4a7807-53cf-4d59-8e36-d07278e09a15
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/window/current/size [39m[32m200[39m [90m11 ms - 100[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/elements[39m
+[35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").resourceId(\"co.sehati.telectg.android:id/edit_password\").instance(1)"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.EditText\").resourceId(\"co.sehati.telectg.android:id/edit_password\").instance(1)","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.EditText\").resourceId(\"co.sehati.telectg.android:id/edit_password\").instance(1)","context":"","multiple":true}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"19b1d0de-adf3-48fa-8c0b-56abb935560c","status":0,"value":[{"ELEMENT":"21c4ce85-2176-4005-9c87-2b7ba1ab1530"}]}
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElements() result: [{"ELEMENT":"21c4ce85-2176-4005-9c87-2b7ba1ab1530"}]
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/elements [39m[32m200[39m [90m498 ms - 124[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15 [39m[32m200[39m [90m10 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15 [39m[32m200[39m [90m8 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15 [39m[32m200[39m [90m7 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getSession() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{}}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554 (Android SDK built for x86 - Android 7.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"emulator-5554"},"app":"C:\\Users\\Sehati - Bedha\\Downloads\\CTG-SA.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceId":"","deviceName":"emulator-5554","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"7.1.1","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","deviceApiLevel":25,"appPackage...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15 [39m[32m200[39m [90m7 ms - 1223[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/location] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/location] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":{\"x\":173,\"y\":772}}"
+[35m[JSONWP Proxy][39m Replacing sessionId 19b1d0de-adf3-48fa-8c0b-56abb935560c with 1e4a7807-53cf-4d59-8e36-d07278e09a15
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/location [39m[32m200[39m [90m18 ms - 89[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/clear[39m
+[35m[HTTP][39m [90m{"id":"21c4ce85-2176-4005-9c87-2b7ba1ab1530"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.clear() with args: ["21c4ce85-2176-4005-9c87-2b7ba1ab1530","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/clear] to [POST http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/clear] with body: {"elementId":"21c4ce85-2176-4005-9c87-2b7ba1ab1530"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"19b1d0de-adf3-48fa-8c0b-56abb935560c","status":0,"value":"Element Cleared"}
+[debug] [35m[MJSONWP][39m Responding to client with driver.clear() result: "Element Cleared"
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/clear [39m[32m200[39m [90m17 ms - 89[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/value[39m
+[35m[HTTP][39m [90m{"id":"21c4ce85-2176-4005-9c87-2b7ba1ab1530","value":["qwerty"]}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setValue() with args: [["qwerty"],"21c4ce85-2176-4005-9c87-2b7ba1ab1530","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/value] to [POST http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/value] with body: {"elementId":"21c4ce85-2176-4005-9c87-2b7ba1ab1530","text":"qwerty","replace":false}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"19b1d0de-adf3-48fa-8c0b-56abb935560c","status":0,"value":""}
+[debug] [35m[MJSONWP][39m Responding to client with driver.setValue() result: ""
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/element/21c4ce85-2176-4005-9c87-2b7ba1ab1530/value [39m[32m200[39m [90m1072 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentContext() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context [39m[32m200[39m [90m2 ms - 84[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/contexts[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getContexts() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.getContexts() result: ["NATIVE_APP"]
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/contexts [39m[32m200[39m [90m50 ms - 86[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context[39m
+[35m[HTTP][39m [90m{"name":"NATIVE_APP"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setContext() with args: ["NATIVE_APP","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.setContext() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context [39m[32m200[39m [90m46 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/appium/device/hide_keyboard[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.hideKeyboard() with args: [null,null,null,null,"1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys input_method'
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/appium/device/hide_keyboard [39m[31m500[39m [90m66 ms - 218[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context[39m
+[35m[HTTP][39m [90m{"name":"NATIVE_APP"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setContext() with args: ["NATIVE_APP","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.setContext() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context [39m[32m200[39m [90m44 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentContext() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context [39m[32m200[39m [90m1 ms - 84[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/contexts[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getContexts() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.getContexts() result: ["NATIVE_APP"]
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/contexts [39m[32m200[39m [90m43 ms - 86[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context[39m
+[35m[HTTP][39m [90m{"name":"NATIVE_APP"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setContext() with args: ["NATIVE_APP","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.setContext() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context [39m[32m200[39m [90m42 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getScreenshot() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /screenshot] to [GET http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c/screenshot] with no body
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":\"iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAIAAACkA3BdAAAAA3NCSVQICAjb4U\\/gAAAgAElEQVR4\\nnOzde1yTZ57\\/\\/zuBkHBMQAMqyEEt1ooIVbH1iHbUaseKHTttd2qLc\\/pO51TamZ2d387u1M7Ozszu\\n7M7Q73ZO235X3B6tzhS1J3VG8dDWUyVQtIpVDgLKSRIgkBBIfn+kjTd3INyBBG709XzMH0m4c99X\\n0Kn3O9f1+Vwq4Qc\\/FAAAAABASdRjPQAAAAAAkCKoAAAAAFAcggoAAAAAxSGoAAAAAFAcggoAAAAA\\nxSGoAAAAAFAcggoAAAAAxSGoAAAAAFAcggoAAAAAxQkd6wGMeyqVSvKKy+Uak5EAAAAANw2CynCo\\nVarUuLhv3rVw5YwZM41GnUYTqlarBMElCL1Op83hqGxuOfjppy+cOHG5tdVJbgEAAAD8pBJ+8MNR\\nuExCdPTt8caoMK3X9ENg9DqdjR2dnzQ22np7g3KBzxnCw7+7ePHTy5fFhofLOd7c3V149Oh\\/HXv\\/\\neldXUAcGAADgr9S4WEEQqq+3jfVAhk8TEuLo6wvsOX+5bt2CqUk+DnijrHxXeTl3d8E2GjMq86cm\\n\\/WzNmuzExAiNxnuhVED0Op2tVuu2U6efO3rU2tMTjEuEqtW\\/uf\\/+JxbdHar2o7DHEB6+dfXqf\\/rC\\nF144fuL7xcW9TmcwxgYAAOBDalzs3MlTshKn5E6fbggPz5oyZcDDTA0N5u7ukkuXTPUNZVcblB9g\\nsqZMuWI2twY6MCyYmnTPbbf5OOBcY9Pbn3wS2IvCW9CDil6n+9W6dStmzFAHaTLlc7Hh4f94z8pa\\nc9vLH50J+MlnT0o4\\/r3vRWm1w3t7qFr9xKK7H5s\\/b8nz...
+[debug] [35m[MJSONWP][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAIAAACkA3BdAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\nnOzde1yTZ57//zuBkHBMQAMqyEEt1ooIVbH1iHbUaseKHTttd2qLc/pO51TamZ2d387u1M7Ozszu\n7M7Q73ZO235X3B6tzhS1J3VG8dDWUyVQtIpVDgLKSRIgkBBIfn+kjTd3INyBBG709XzMH0m4c99X\n0Kn3O9f1+Vwq4Qc/FAAAAABASdRjPQAAAAAAkCKoAAAAAFAcggoAAAAAxSGoAAAAAFAcggoAAAAA\nxSGoAAAAAFAcggoAAAAAxSGoAAAAAFAcggoAAAAAxQkd6wGMeyqVSvKKy+Uak5EAAAAANw2CynCo\nVarUuLhv3rVw5YwZM41GnUYTqlarBMElCL1Op83hqGxuOfjppy+cOHG5tdVJbgEAAAD8pBJ+8MNR\nuExCdPTt8caoMK3X9ENg9DqdjR2dnzQ22np7g3KBzxnCw7+7ePHTy5fFhofLOd7c3V149Oh/HXv/\neldXUAcGAADgr9S4WEEQqq+3jfVAhk8TEuLo6wvsOX+5bt2CqUk+DnijrHxXeTl3d8E2GjMq86cm\n/WzNmuzExAiNxnuhVED0Op2tVuu2U6efO3rU2tMTjEuEqtW/uf/+JxbdHar2o7DHEB6+dfXqf/rC\nF144fuL7xcW9TmcwxgYAAOBDalzs3MlTshKn5E6fbggPz5oyZcDDTA0N5u7ukkuXTPUNZVcblB9g\nsqZMuWI2twY6MCyYmnTPbbf5OOBcY9Pbn3wS2IvCW9CDil6n+9W6dStmzFAHaTLlc7Hh4f94z8pa\nc9vLH50J+MlnT0o4/r3vRWm1w3t7qFr9xKK7H5s/b8nzvzM1NAR2bD4YwsOnxcWFazTXOjrqLJae\nvj5/62d0oaGTYqLrLe0B/64CAAAE24bZs/MyMnKnT3fPnAzJHWByp093P62+3lZy6VJxRcXus2eD\nOMrhyp...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/screenshot [39m[32m200[39m [90m268 ms - 73300[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context[39m
+[35m[HTTP][39m [90m{"name":"NATIVE_APP"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.setContext() with args: ["NATIVE_APP","1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[AndroidDriver][39m Getting a list of available webviews
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+[debug] [35m[AndroidDriver][39m Found webviews: []
+[debug] [35m[AndroidDriver][39m Available contexts: ["NATIVE_APP"]
+[debug] [35m[MJSONWP][39m Responding to client with driver.setContext() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15/context [39m[32m200[39m [90m45 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.deleteSession() with args: ["1e4a7807-53cf-4d59-8e36-d07278e09a15"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1560247090185 (16:58:10 GMT+0700 (Western Indonesia Time))
+[35m[Appium][39m Removing session 1e4a7807-53cf-4d59-8e36-d07278e09a15 from our master session list
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session
+[debug] [35m[JSONWP Proxy][39m Proxying [DELETE /] to [DELETE http://localhost:8201/wd/hub/session/19b1d0de-adf3-48fa-8c0b-56abb935560c] with no body
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"19b1d0de-adf3-48fa-8c0b-56abb935560c\",\"status\":0,\"value\":\"Session deleted\"}"
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop co.sehati.telectg.android'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Removing forwarded port socket connection: 8201 
+[debug] [35m[ADB][39m Running 'C:\Users\Sehati - Bedha\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward --remove tcp\:8201'
+[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1560247090587 (16:58:10 GMT+0700 (Western Indonesia Time))
+[debug] [35m[MJSONWP][39m Received response: null
+[debug] [35m[MJSONWP][39m But deleting session, so not returning
+[debug] [35m[MJSONWP][39m Responding to client with driver.deleteSession() result: null
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/1e4a7807-53cf-4d59-8e36-d07278e09a15 [39m[32m200[39m [90m403 ms - 76[39m
+[35m[HTTP][39m [90m[39m
